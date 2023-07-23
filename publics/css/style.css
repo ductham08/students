@@ -173,7 +173,11 @@ a {
 }
 
 .don-nghi-phep .form .item-form{
-    margin: 20px 0;
+    margin: 35px 0;
+    border: 1px solid gainsboro;
+    padding: 20px 5px !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
 }
 
 .don-nghi-phep .form .item-form input,
