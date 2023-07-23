@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn nghỉ phép</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- BASE CSS -->
+    <link rel="stylesheet" href="./publics/css/style.css">
+</head>
+
+<body>
+
+    <!-- PAGE START -->
+    <div class="main">
+        <div class="navbar">
+            <div class="title-nav">
+                <h5>Cổng thông tin Sinh viên</h5>
+            </div>
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="./don-nghi-phep.html">
+                        
+                        <i class="fa-solid fa-receipt"></i>
+                        Tạo đơn nghỉ phép
+                    </a>
+                </li>
+                <li>
+                    <a href="./nhom-bai-tap.html">
+                        <i class="fas fa-users"></i>
+                        Đăng ký nhóm
+                    </a>
+                </li>
+                <li>
+                    <a href="./khao-sat.html">
+                        <i class="fa-solid fa-newspaper"></i>
+                        khảo sát
+                    </a>
+                </li>
+                <li>
+                    <a href="./bao-cao.html">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        Báo cáo
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <i class="fas fa-user-alt"></i>
+                        Thông tin tài khoản
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTENT START -->
+        <div class="col-md-10 col-8 content">
+            <div class="titel-main">
+                <h5>Tạo đơn nghỉ phép</h5>
+                <hr>
+            </div>
+
+            <div class="main-content don-nghi-phep">
+                <div class="form">
+                    <div class="item-form col-md-3 col-11">
+                        <p>Ngày nghỉ phép</p>
+                        <input placeholder="Câu trả lời của bạn" type="date">
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Tiết nghỉ phép</p>
+                        <select>
+                            <option>Tiết 1</option>
+                            <option>Tiết 2</option>
+                            <option>Tiết 3</option>
+                            <option>Tiết 4</option>
+                            <option>Tiết 5</option>
+                            <option>Tiết 6</option>
+                        </select>
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Môn nghỉ phép</p>
+                        <input placeholder="Câu trả lời của bạn" type="text">
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Mã lớp</p>
+                        <input placeholder="Câu trả lời của bạn" type="text">
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Họ và tên</p>
+                        <input placeholder="Câu trả lời của bạn" type="text">
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Mã sinh viên</p>
+                        <input placeholder="Câu trả lời của bạn" type="text">
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Ghi chú</p>
+                        <textarea name="" id="" rows="7"></textarea>
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <button class="col-md-4 col-12">
+                            Gửi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE END -->
+    
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SWIPPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c29ec90d7d.js" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        // SLIDER
+        var swiper = new Swiper(".slider", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        // NAV LEFT START
+        $(document).ready(function () {
+
+            $(".btn-nav").click(function () {
+                $(".left-bar").addClass("active");
+                $("body").addClass("active");
+            });
+
+            $(".background-left-bar").click(function () {
+                $(".left-bar").removeClass("active");
+                $("body").removeClass("active");
+            });
+        });
+        // NAV LEFT END
+
+    </script>
+
+</body>
+
+</html>

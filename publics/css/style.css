@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'aver-reg';
+    src: url("../fonts/Intelligent\ Design\ -\ AvertaStdCY-Regular_3.otf");
+}
+
+@font-face {
+    font-family: 'aver-bold';
+    src: url("../fonts/Intelligent\ Design\ -\ AvertaStdCY-Bold_1.otf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'aver-reg';
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto,
+.container {
+    padding: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR START */
+
+.navbar{
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px black;
+    padding: 25px 0 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 280px;
+    position: fixed;
+    left: 0;
+}
+
+.navbar ul{
+    padding: 0px;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.navbar ul li:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+.navbar ul li a{
+    color: #4b4848;
+}
+
+.navbar .title-nav{
+    text-align: center;
+}
+
+.navbar .title-nav p{
+    font-family: 'aver-bol';
+    font-weight: 700;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main .content{
+    padding-left: 25px !important;
+    padding-top: 25px !important;
+    min-height: 100vh;
+    position: fixed;
+    right: 0;
+}
+
+/* NAVBAR END */
+
+/* DƠN NGHI PHEP START */
+
+.don-nghi-phep .form{
+    height: 90vh;
+    overflow-y: scroll;
+    padding-left: 15px;
+}
+
+.don-nghi-phep .form .item-form{
+    margin: 20px 0;
+}
+
+.don-nghi-phep .form .item-form input,
+.don-nghi-phep .form .item-form textarea,
+.don-nghi-phep .form .item-form select{
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    border:none;
+    border-radius: 0;
+    margin: 2px 0;
+    border-bottom: 1px solid gray;
+}
+
+.don-nghi-phep .form .item-form button{
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 5px 0px black;
+    padding: 5px 15px !important;
+    border-radius: 7px;
+}
+
+.don-nghi-phep .form .item-form b{
+    color: red;
+}
+
+.don-nghi-phep .form .item-form select{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+/* DƠN NGHI PHEP END */
