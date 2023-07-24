@@ -174,6 +174,8 @@ a {
     .main .content{
         padding-left: 0px !important;
         margin: auto;
+        left: 0;
+        right: 0;
     }
 
     .don-nghi-phep .form {
