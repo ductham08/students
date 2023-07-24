@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đơn nghỉ phép</title>
+    <title>Tài khoản</title>
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -82,66 +82,54 @@
         <!-- CONTENT START -->
         <div class="col-md-10 col-11 content">
             <div class="titel-main">
-                <h5>Tạo đơn nghỉ phép</h5>
+                <h5>Thông tin tài khoản</h5>
                 <hr>
             </div>
 
-            <div class="main-content don-nghi-phep">
+            <div class="main-content don-nghi-phep account">
                 <div class="form">
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Ngày nghỉ phép</p>
-                            <input placeholder="Câu trả lời của bạn" type="date">
+                    <div class="title-form">
+                        <div class="avatar col-md-1 col-2">
+                            <img src="./publics/images/avatar.png" width="100%" alt="">
                         </div>
+                        <h5>Xin chào Quyên!</h5>
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Tiết nghỉ phép</p>
-                            <select>
-                                <option>Tiết 1</option>
-                                <option>Tiết 2</option>
-                                <option>Tiết 3</option>
-                                <option>Tiết 4</option>
-                                <option>Tiết 5</option>
-                                <option>Tiết 6</option>
-                            </select>
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Họ và tên</p>
+                        <input value="Hoàng Quyên" type="text">
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Môn nghỉ phép</p>
-                            <input placeholder="Câu trả lời của bạn" type="text">
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Mã sinh viên</p>
+                        <input value="SV13245" disabled type="text">
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Mã lớp</p>
-                            <input placeholder="Câu trả lời của bạn" type="text">
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Giới tính</p>
+                        <input id="nam" value="Nam" type="radio" name="sex">
+                        <label for="nam">Nam</label>
+                        <input value="Nữ" id="nu" type="radio" name="sex">
+                        <label for="nu"> Nữ</label>
+                        <input value="khác" id="khac" type="radio" name="sex">
+                        <label for="khac">Khác</label>
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Họ và tên</p>
-                            <input placeholder="Câu trả lời của bạn" type="text">
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Ngày sinh</p>
+                        <input type="date" >
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Mã sinh viên</p>
-                            <input placeholder="Câu trả lời của bạn" type="text">
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Số CDMN/CCCD</p>
+                        <input type="text" value="123456789" >
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <p>Ghi chú</p>
-                            <textarea name="" id="" rows="7"></textarea>
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Số thẻ bảo hiểm y tế</p>
+                        <input type="text" value="123456789" >
                     </div>
-                    <div class="item-form col-md-11 col-11">
-                        <div class="col-md-3 col-12">
-                            <button class="col-md-4 col-12">
-                                Gửi
-                        </div>
+                    <div class="item-form col-md-3 col-11">
+                        <p>Địa chỉ thường chú</p>
+                        <textarea rows="5"></textarea>
+                    </div>
+                    <div class="item-form col-md-3 col-11">
+                        <button class="col-md-4 col-12">
+                            Gửi
                         </button>
                     </div>
                 </div>
@@ -183,11 +171,6 @@
                 $("body").addClass("active");
             });
 
-            $(".background-left-bar").click(function () {
-                $(".left-bar").removeClass("active");
-                $("body").removeClass("active");
-            });
-
             $(".btn-menu").click(function () {
                 $(".menu-left").addClass("active");
                 $("body").addClass("active");
@@ -195,6 +178,11 @@
 
             $(".bg").click(function () {
                 $(".menu-left").removeClass("active");
+                $("body").removeClass("active");
+            });
+
+            $(".background-left-bar").click(function () {
+                $(".left-bar").removeClass("active");
                 $("body").removeClass("active");
             });
         });

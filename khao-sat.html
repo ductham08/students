@@ -21,53 +21,66 @@
 
     <!-- PAGE START -->
     <div class="main">
-        <div class="navbar">
-            <div class="title-nav">
-                <h5>Cổng thông tin Sinh viên</h5>
+        <div class="nav-mobile">
+            <div class="btn-menu">
+                <div class="top item-btn"></div>
+                <div class="center item-btn"></div>
+                <div class="bottom item-btn"></div>
             </div>
-            <ul>
-                <li>
-                    <a href="./index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Trang chủ
-                    </a>
-                </li>
-                <li>
-                    <a href="./don-nghi-phep.html">
-                        
-                        <i class="fa-solid fa-receipt"></i>
-                        Tạo đơn nghỉ phép
-                    </a>
-                </li>
-                <li>
-                    <a href="./nhom-bai-tap.html">
-                        <i class="fas fa-users"></i>
-                        Đăng ký nhóm
-                    </a>
-                </li>
-                <li>
-                    <a href="./khao-sat.html">
-                        <i class="fa-solid fa-newspaper"></i>
-                        khảo sát
-                    </a>
-                </li>
-                <li>
-                    <a href="./bao-cao.html">
-                        <i class="fa-solid fa-file-invoice"></i>
-                        Báo cáo
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html">
-                        <i class="fas fa-user-alt"></i>
-                        Thông tin tài khoản
-                    </a>
-                </li>
-            </ul>
+            <div class="user">
+                <h6>Xin chào Hoàng Quyên!</h6>
+            </div>
+        </div>
+        <div class="menu-left">
+            <div class="bg"></div>
+            <div class="navbar">
+                <div class="title-nav">
+                    <h5>Cổng thông tin Sinh viên</h5>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./don-nghi-phep.html">
+                            
+                            <i class="fa-solid fa-receipt"></i>
+                            Tạo đơn nghỉ phép
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./nhom-bai-tap.html">
+                            <i class="fas fa-users"></i>
+                            Đăng ký nhóm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./khao-sat.html">
+                            <i class="fa-solid fa-newspaper"></i>
+                            khảo sát
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./bao-cao.html">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            Báo cáo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./account.html">
+                            <i class="fas fa-user-alt"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- CONTENT START -->
-        <div class="col-md-10 col-8 content">
+        <div class="col-md-10 col-11 content">
             <div class="titel-main">
                 <h5>Phiếu khảo sát</h5>
                 <hr>
@@ -206,6 +219,16 @@
 
             $(".background-left-bar").click(function () {
                 $(".left-bar").removeClass("active");
+                $("body").removeClass("active");
+            });
+
+            $(".btn-menu").click(function () {
+                $(".menu-left").addClass("active");
+                $("body").addClass("active");
+            });
+
+            $(".bg").click(function () {
+                $(".menu-left").removeClass("active");
                 $("body").removeClass("active");
             });
         });
