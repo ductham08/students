@@ -162,6 +162,7 @@ a {
     min-height: 100vh;
     position: fixed;
     right: 0;
+    left: 0;
     margin: auto;
 }
 
@@ -232,6 +233,10 @@ a {
         z-index: -99;
         transform: translateX(-100%);
         transition: 0.5s ease-in-out;
+    }
+
+    .don-nghi-phep .form{
+        height: 80vh;
     }
 
 }
