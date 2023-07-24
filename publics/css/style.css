@@ -193,10 +193,11 @@ a {
 }
 
 .don-nghi-phep .form .item-form button{
-    border: 1px solid gainsboro;
-    box-shadow: 0px 0px 5px 0px black;
+    border: none;
     padding: 5px 15px !important;
-    border-radius: 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4285f4;
 }
 
 .don-nghi-phep .form .item-form b{
@@ -209,3 +210,59 @@ a {
 }
 
 /* DƠN NGHI PHEP END */
+.signin-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.signin-page .form{
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px  black;
+    border-radius: 5px;
+    padding: 15px 10px !important;
+    max-width: 400px;
+}
+
+.signin-page .form .title-form{
+    padding: 35px 0;
+}
+
+.signin-page .form .item-form{
+    padding: 10px 20px !important;
+    margin: auto;
+}
+
+.signin-page .form input{
+    width: 100%;
+    padding: 7px 10px;
+    outline: none;
+    border-radius: 0;
+    margin: 2px 0;
+    border: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+}
+
+.signin-page .form button{
+    border: none;
+    padding: 5px 15px !important;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: white;
+}
+
+.signin-page .form .nav-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px !important;
+}
+
+.signin-page .form .nav-form a{
+    font-size: 13px ;
+    color: red;
+}
